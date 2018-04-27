@@ -1,0 +1,58 @@
+---
+---
+@import 'variables'  
+
+.contact
+  font-size: 1.5em
+
+.contact-fields
+  list-style: none
+
+.contact-field
+  padding: 10px
+  background: none
+  transition: .5s
+
+  &:hover
+    background: darken(#FFF, 10%)
+
+// .contact-label
+//   padding: 5px
+
+.contact-input
+  border: none
+  font-size: .9em
+  border-bottom: 1px solid $grey
+  transition: .1s
+  display: block
+  padding-top: 5px
+  width: 80%
+
+  &:focus
+    border-bottom: 2px solid $red
+    outline: none
+
+input[type="checkbox"]
+  width: 19px
+  height: 19px
+  margin: 0 0 0 10px
+  vertical-align: middle
+  cursor: pointer
+
+.contact-submit
+  background-color: $red
+  font-size: 1em
+  padding: 10px
+  border-radius: 3px
+  border: none
+  margin-top: 20px
+  color: $white
+  cursor: pointer
+  transition: .25s
+
+  &:hover
+    background-color: lighten($red, 2%)
+    padding: 12px
+
+.contact-submit-wrapper
+  text-align: center
