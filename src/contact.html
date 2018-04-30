@@ -4,46 +4,73 @@ title: ProtoQuick | Contact
 narrow: true
 ---
 
-<h1>Get A Quote</h1>
-<!-- https://formspree.io/info@proto-quick.com -->
-<form class="contact" action="mailto:ryan@proto-quick.com" method="POST">
-  <ul class="contact-fields">
-    <li class="contact-field">
-      <label class="contact-label" for="_replyto">Your Email</label>
-      <input class="contact-input" type="text" name="_replyto" placeholder="you@example.com">
-    </li>
-    <li class="contact-field">
-      <label class="contact-label" for="company">Are you with a company?</label>
-      <input class="contact-input" type="text" name="company" placeholder="Your Company, Inc.">
-    </li>
-    <li class="contact-field">
-      <fieldset>
-        <legend>How can we help you?</legend>
-        <label class="contact-label" for="needs-molding">Molding<span class="checkbox"></span></label><input type="checkbox" name="needs-molding" value="molding">
-        <label class="contact-label" for="needs-machining">Machining<span class="checkbox"></span></label><input type="checkbox" name="needs-machining" value="machining">
-        <label class="contact-label" for="needs-edm">EDM<span class="checkbox"></span></label><input type="checkbox" name="needs-edm" value="edm">
-        <label class="contact-label" for="needs-engineering">Engineering<span class="checkbox"></span></label><input type="checkbox" name="needs-engineering" value="engineering">
-      </fieldset>
-    </li>
-    <li class="contact-field">
-      <label class="contact-label" for="materials">What kind of materials are you looking for?</label>
-      <input class="contact-input" type="text" name="materials" placeholder="Steel, aluminum, polycarbonate...">
-    </li>
-    <li class="contact-field">
-      <label class="contact-label" for="timeline">What are your timeline needs?</label>
-      <input class="contact-input" type="text" name="timeline" placeholder="2 weeks, 3 weeks, 3 days...">
-    </li>
-    <li class="contact-field">
-      <label class="contact-label" for="quantity">How many total pieces do you need?</label>
-      <input class="contact-input" type="text" name="quantity" placeholder="1, 5, 10, 100,000...">
-    </li>
-    <li class="contact-submit-wrapper">
-      <input class="contact-submit" type="submit" value="Get Started">
-    </li>
-  </ul>
-  <input type="hidden" name="_next" value="/thanks/">
-  <input type="hidden" name="_subject" value="Website RFQ">
-  <input type="hidden" name="_cc" value="ken@proto-quick.com,ryan@proto-quick.com">
-  <input type="text" name="_gotcha" style="display:none">
-</form>
+<article>
+
+  <h1>Get A Quote</h1>
+  <form class="contact" action="https://formspree.io/info@proto-quick.com" method="POST">
+    <ul class="contact-fields">
+      <li class="contact-field">
+          <label class="contact-label" for="name">Your Name</label>
+          <input class="contact-input" type="text" name="name" placeholder="">
+      </li>
+      <li class="contact-field">
+        <label class="contact-label" for="phone">Your Email</label>
+        <input class="contact-input" type="email" name="_replyto" placeholder="you@example.com">
+      </li>
+      <li class="contact-field">
+        <label class="contact-label" for="phone">Your Phone Number</label>
+        <input class="contact-input" type="tel" name="phone" placeholder="1-555-555-5555">
+      </li>
+      <li class="contact-field">
+        <label class="contact-label" for="company">Are you with a company?</label>
+        <input class="contact-input" type="text" name="company" placeholder="Your Company, Inc.">
+      </li>
+      <li class="contact-field">
+          <label class="contact-label" for="nda">Do you need an NDA signed?</label>
+          <input type="checkbox" name="nda">
+      </li>
+      <li class="contact-field">
+        <fieldset>
+          <legend>How can we help you?</legend>
+          <div class="contact-checkgroup">
+            <input type="checkbox" name="needs-molding" value="molding">
+            <label class="contact-label" for="needs-molding">Molding</label>
+          </div>
+          <div class="contact-checkgroup">
+            <input type="checkbox" name="needs-machining" value="machining">
+            <label class="contact-label" for="needs-machining">Machining</label>
+          </div>
+          <div class="contact-checkgroup">
+            <input type="checkbox" name="needs-edm" value="edm">
+            <label class="contact-label" for="needs-edm">EDM</label>
+          </div>
+          <div class="contact-checkgroup">
+            <input type="checkbox" name="needs-engineering" value="engineering">
+            <label class="contact-label" for="needs-engineering">Engineering</label>
+          </div>
+        </fieldset>
+      </li>
+      <li class="contact-field">
+        <label class="contact-label" for="materials">What kind of materials are you looking for?</label>
+        <input class="contact-input" type="text" name="materials" placeholder="Steel, aluminum, polycarbonate...">
+      </li>
+      <li class="contact-field">
+        <label class="contact-label" for="timeline">What are your timeline needs?</label>
+        <input class="contact-input" type="text" name="timeline" placeholder="2 weeks, 3 weeks, 3 days...">
+      </li>
+      <li class="contact-field">
+        <label class="contact-label" for="quantity">How many total pieces do you need?</label>
+        <input class="contact-input" type="text" name="quantity" placeholder="1, 5, 10, 100,000...">
+      </li>
+      <li class="contact-submit-wrapper">
+        <input class="contact-submit" type="submit" value="Get Started">
+      </li>
+    </ul>
+    <input type="hidden" name="_next" value="/success/">
+    <input type="hidden" name="_subject" value="Website RFQ">
+    <input type="hidden" name="_cc" value="ken@proto-quick.com,ryan@proto-quick.com">
+    <input type="text" name="_gotcha" style="display:none">
+  </form>
+</article>
+
 <link rel="stylesheet" href="/css/contact.css">

@@ -1,26 +1,38 @@
 /* Media Query breaks */
 /* Tile gray */
 .contact {
-  font-size: 1.5em; }
+  font-size: 1.2em;
+  margin: auto;
+  width: 100%; }
 
 .contact-fields {
-  list-style: none; }
+  list-style: none;
+  padding: 0;
+  margin: auto;
+  width: 80%; }
 
 .contact-field {
   padding: 10px;
   background: none;
-  transition: 0.5s; }
+  transition: 0.5s;
+  width: 100%; }
   .contact-field:hover {
     background: #e6e6e6; }
 
+.contact-checkgroup {
+  display: inline;
+  padding: 5px; }
+@media(max-width: 700px) {
+  .contact-checkgroup {
+    display: block; } }
 .contact-input {
   border: none;
   font-size: 0.9em;
   border-bottom: 1px solid #BBB;
   transition: 0.1s;
   display: block;
-  padding-top: 5px;
-  width: 80%; }
+  padding-top: 10px;
+  width: 100%; }
   .contact-input:focus {
     border-bottom: 2px solid #BD1818;
     outline: none; }

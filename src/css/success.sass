@@ -1,0 +1,32 @@
+---
+---
+@import 'variables'
+
+.svg-holder
+  color: $red
+  text-align: center
+
+svg
+  fill: currentColor
+  width: 20vw
+
+@keyframes bounce
+  from
+    transform: translateY(0px)
+  to
+    transform: translateY(5px)
+    
+@keyframes shimmy
+  from
+    transform: translate(-4px, 5px)
+  to
+    transform: translate(2px, 5px)
+
+.st3, .st5
+  animation: shimmy .8s ease-in-out 0s infinite alternate
+
+.st6
+  animation: bounce .3s linear 0s infinite
+
+.return--link
+  font-size: 2em

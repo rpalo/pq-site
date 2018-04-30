@@ -117,9 +117,3 @@ strong {
   @media (max-width: 700px) {
     .well {
       max-width: 90vw; } }
-
-.content--narrow {
-  max-width: 900px; }
-  @media (max-width: 700px) {
-    .content--narrow {
-      max-width: 90vw; } }
