@@ -62,6 +62,11 @@ narrow: true
         <label class="contact-label" for="quantity">How many total pieces do you need?</label>
         <input class="contact-input" type="text" name="quantity" placeholder="1, 5, 10, 100,000...">
       </li>
+      <li class="contact-field">
+        <label class="contact-label" for="file">Upload a CAD file</label>
+        <input type="hidden" role="uploadcare-uploader" name="content"
+       data-multiple="true" />
+      </li>
       <li class="contact-submit-wrapper">
         <input class="contact-submit" type="submit" value="Get Started">
       </li>
