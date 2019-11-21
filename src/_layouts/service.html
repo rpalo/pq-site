@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<section class="tiles">
+    <div class="tile tile__content">
+        <img class="tile__logo" src="{{ page.logo.src }}" alt="{{ page.logo.alt }}">
+        <h3 class="tile__content__header">{{ page.title }}</h3>
+        <div class="tile__content__copy">{{ content }}</div>
+    </div>
+    {% for image in page.images %}
+    <figure class="tile tile__img"><img src="{{ image.src }}" alt="{{ image.alt }}"></figure>
+    {% endfor %}
+</section>
+
+<section class="services__bottom">
+    <div class="additional-services">
+        <h3>Additional Services</h3>
+        <p>We have access to lots of additional services and vendors for the services that we don’t cover in-house, so
+            that we can be your one-stop prototyping and production shop.</p>
+        <ul class="additional-services__list">
+            <li>SLA (Stereolithography)</li>
+            <li>Heat Treating</li>
+            <li>Electroplating</li>
+            <li>Welding</li>
+            <li>Painting</li>
+            <li>CNC Turning</li>
+            <li>Gun Drilling</li>
+        </ul>
+    </div>
+    <div class="contact">
+        <address>
+            1775 Timothy Drive
+            <br> San Leandro, CA 94577
+            <br> Bay Area Machine Shop, Injection Molding, and Engineering
+        </address>
+    </div>
+</section>
+<link rel="stylesheet" href="/css/secondary_styles.css">
