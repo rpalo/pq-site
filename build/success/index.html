@@ -44,8 +44,8 @@
   <script>
     UPLOADCARE_LOCALE = "en";
     UPLOADCARE_TABS = "file url facebook gdrive gphotos dropbox instagram evernote flickr skydrive";
-    UPLOADCARE_PUBLIC_KEY = "d47ee8ffd1f905093aba";
   </script>
+  <script src="/js/secrets.js"></script>
   <script charset="utf-8" src="//ucarecdn.com/libs/widget/3.6.0/uploadcare.full.min.js"></script>
 
 </head>
@@ -62,7 +62,15 @@
       </div>
       <a class="header__link" href="/about/">About</a>
       <a class="header__link" href="/quality/">Quality</a>
-      <a class="header__link" href="/services/">Services</a>
+      <div class="dropdown">
+        <button class="dropdown__button">Services</button>
+        <div class="dropdown__content">
+          <a class="dropdown__link" href="/services/molding">Molds & Molding</a>
+          <a class="dropdown__link" href="/services/machining">CNC Machining</a>
+          <a class="dropdown__link" href="/services/edm">Wire & Conventional EDM</a>
+          <a class="dropdown__link" href="/services/engineering">Engineering Support</a>
+        </div>
+      </div>
       <a class="header__link" href="/contact/">Get A <br>Quote</a>
     </header>
 
@@ -104,7 +112,7 @@
 <link rel="stylesheet" href="/css/success.css">
   </div>
   <footer>
-    &copy; 2017 ProtoQuick, Inc.
+    &copy; 2019 ProtoQuick, Inc.
   </footer>
 
   <script src="/js/index.js"></script>

@@ -6,16 +6,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="description" content="{% include long_description.txt %}" />
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{% include long_description.txt %}{% endif %}" />
   <!-- Schema.org markup for Google+ -->
   <meta itemprop="name" content="ProtoQuick, Inc.">
-  <meta itemprop="description" content="{% include short_description.txt %}">
+  <meta itemprop="description" content="{% if page.description %}{{ page.description }}{% else %}{% include short_description.txt %}{% endif %}">
   <meta itemprop="image" content="https://proto-quick.com/images/card-image.png">
 
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="ProtoQuick, Inc. | Home">
-  <meta name="twitter:description" content="{% include short_description.txt %}">
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{% include short_description.txt %}{% endif %}">
   <meta name="twitter:creator" content="@paytastic">
   <!-- Twitter summary card with large image must be at least 280x150px -->
   <meta name="twitter:image:src" content="https://proto-quick.com/images/card-image.png">
@@ -25,7 +25,7 @@
   <meta property="og:type" content="article" />
   <meta property="og:url" content="http://proto-quick.com" />
   <meta property="og:image" content="https://proto-quick.com/images/card-image.png" />
-  <meta property="og:description" content="{% include short_description.txt %}" />
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{% include short_description.txt %}{% endif %}" />
   <meta property="og:site_name" content="ProtoQuick" />
 
   <!-- Favicons -->
@@ -62,14 +62,22 @@
       </div>
       <a class="header__link" href="/about/">About</a>
       <a class="header__link" href="/quality/">Quality</a>
-      <a class="header__link" href="/services/">Services</a>
+      <div class="dropdown">
+        <button class="dropdown__button">Services</button>
+        <div class="dropdown__content">
+          <a class="dropdown__link" href="/services/molding">Molds & Molding</a>
+          <a class="dropdown__link" href="/services/machining">CNC Machining</a>
+          <a class="dropdown__link" href="/services/edm">Wire & Conventional EDM</a>
+          <a class="dropdown__link" href="/services/engineering">Engineering Support</a>
+        </div>
+      </div>
       <a class="header__link" href="/contact/">Get A <br>Quote</a>
     </header>
 
     {{ content }}
   </div>
   <footer>
-    &copy; 2017 ProtoQuick, Inc.
+    &copy; {{ site.time | date: "%Y" }} ProtoQuick, Inc.
   </footer>
 
   <script src="/js/index.js"></script>

@@ -2,33 +2,6 @@
 ---
 @import 'variables'
 
-/* Services Nav */
-
-.service__nav
-  color: $red
-  font-weight: bold
-  display: grid
-  text-align: center
-
-.service__nav__links
-  display: grid
-  grid-gap: 30px
-  grid-template-columns: repeat(4, 1fr)
-  justify-content: space-around
-  justify-items: center
-  list-style-type: none
-  padding: 0
-  margin: 0
-  @media (max-width: 700px)
-    grid-gap: 20px
-    grid-template-columns: 1fr
-
-.service__nav__link
-  border-bottom: 0
-  transition: border-bottom .25s ease-out
-  cursor: pointer
-  font-size: 1.1em
-
 .tile__content
   background: $red
   color: $white
@@ -38,9 +11,6 @@
   grid-template-columns: 100px 1fr
   grid-template-rows: auto 1fr
   overflow-y: scroll
-
-.active
-  border-bottom: 2px solid $red
 
 .tile__img
   position: relative

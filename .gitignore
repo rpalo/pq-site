@@ -4,3 +4,5 @@ _site
 node_modules/
 backups/
 **secrets**
+.jekyll-cache/
+build/

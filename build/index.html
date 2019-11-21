@@ -44,8 +44,8 @@
   <script>
     UPLOADCARE_LOCALE = "en";
     UPLOADCARE_TABS = "file url facebook gdrive gphotos dropbox instagram evernote flickr skydrive";
-    UPLOADCARE_PUBLIC_KEY = "d47ee8ffd1f905093aba";
   </script>
+  <script src="/js/secrets.js"></script>
   <script charset="utf-8" src="//ucarecdn.com/libs/widget/3.6.0/uploadcare.full.min.js"></script>
 
 </head>
@@ -62,7 +62,15 @@
       </div>
       <a class="header__link" href="/about/">About</a>
       <a class="header__link" href="/quality/">Quality</a>
-      <a class="header__link" href="/services/">Services</a>
+      <div class="dropdown">
+        <button class="dropdown__button">Services</button>
+        <div class="dropdown__content">
+          <a class="dropdown__link" href="/services/molding">Molds & Molding</a>
+          <a class="dropdown__link" href="/services/machining">CNC Machining</a>
+          <a class="dropdown__link" href="/services/edm">Wire & Conventional EDM</a>
+          <a class="dropdown__link" href="/services/engineering">Engineering Support</a>
+        </div>
+      </div>
       <a class="header__link" href="/contact/">Get A <br>Quote</a>
     </header>
 
@@ -71,12 +79,13 @@
       <div class="spacer--top"></div>
       <div class="tile__ribbon">
         <img class="tile__icon" alt="Mold icon" src="images/mold-icon.svg">
-        <span class="tile__title">Injection Molding &amp;
-          <br> Mold-Making</span>
+        <a href="/services/molding/" class="tile__title">Injection Molding &amp;
+          <br> Mold-Making</a>
         <ul class="tile__details">
           <li>1 55-Ton Arburg with robotic automation</li>
           <li>1 55-Ton Arburg molding machine</li>
           <li>1 77-Ton Arburg molding machine</li>
+          <li>1 110-Ton Toshiba molding machine</li>
           <li>Fully equipped shop for custom tooling</li>
         </ul>
       </div>
@@ -86,9 +95,9 @@
     <div class="spacer--top"></div>
     <div class="tile__ribbon">
       <img class="tile__icon" alt="Mill icon" src="images/mill-icon.svg">
-      <span class="tile__title">CNC Machining</span>
+      <a href="/services/machining/" class="tile__title">CNC Machining</a>
       <ul class="tile__details">
-        <li>6 3-Axis CNC Mills</li>
+        <li>8 3-Axis CNC Mills</li>
         <li>4th Axis Option</li>
         <li>3 Manual Bridgeport Mills</li>
         <li>3 Manual Lathes</li>
@@ -103,7 +112,7 @@
     <div class="spacer--top"></div>
     <div class="tile__ribbon">
       <img class="tile__icon" alt="Engineering icon" src="images/eng-icon.svg">
-      <span class="tile__title">Engineering Support &amp; Consulting</span>
+      <a href="/services/engineering/" class="tile__title">Engineering Support &amp; Consulting</a>
       <ul class="tile__details">
         <li>In-House Certified SolidWorks Expert</li>
         <li>In-House Plastics flow simulation</li>
@@ -117,7 +126,7 @@
     <div class="spacer--top"></div>
     <div class="tile__ribbon">
       <img class="tile__icon" alt="EDM icon" src="images/edm-icon.svg">
-      <span class="tile__title">Wire &amp; Conventional EDM</span>
+      <a href="/services/edm/" class="tile__title">Wire &amp; Conventional EDM</a>
       <ul class="tile__details">
         <li>2 EDM Wire Machines</li>
         <li>1 EDM Sinker</li>
@@ -145,7 +154,7 @@
 </section>
   </div>
   <footer>
-    &copy; 2017 ProtoQuick, Inc.
+    &copy; 2019 ProtoQuick, Inc.
   </footer>
 
   <script src="/js/index.js"></script>
