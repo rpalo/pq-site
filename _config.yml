@@ -8,12 +8,33 @@ url: "https://proto-quick.com" # the base hostname & protocol for your site, e.g
 # Build settings
 markdown: kramdown
 
+kramdown:
+  auto_ids: false
+
 source: ./src
 destination: ./build
 permalink: pretty
 sass:
   style: compressed
 
+
+collections:
+  careers:
+    output: true
+    order:
+      - quality-assurance.md
+      - entry-level-support.md
+      - engineer.md
+      - machinist.md
+      - molding-technician.md
+
+defaults:
+  - scope:
+      path: ""
+      type: careers
+    values:
+      layout: career
+      narrow: true
 
 plugins:
   - jekyll-autoprefixer

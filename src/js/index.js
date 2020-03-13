@@ -15,11 +15,13 @@ tiles.some(function(tile) {
 
 // Dropdown Services Menu
 
-const servicesMenu = document.querySelector(".dropdown");
-servicesMenu.addEventListener("click", function() {
-  if (this.dataset["state"] == "open") {
-    this.dataset["state"] = "closed";
-  } else {
-    this.dataset["state"] = "open";
-  }
+const dropdownMenus = document.querySelectorAll(".dropdown");
+dropdownMenus.forEach(function(menu) {
+  menu.addEventListener("click", function() {
+    if (this.dataset["state"] == "open") {
+      this.dataset["state"] = "closed";
+    } else {
+      this.dataset["state"] = "open";
+    }
+  });
 });

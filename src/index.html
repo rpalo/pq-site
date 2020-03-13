@@ -1,24 +1,26 @@
 ---
-title: ProtoQuick, Inc. | Bay Area Prototyping Machine Shop and Injection Molder 
-layout: default
+title: ProtoQuick, Inc. | Bay Area Prototyping Machine Shop and Injection Molder
+layout: home
+stylesheets:
+- home.css
 ---
 
 <section class="tiles">
   <div class="tile tile__molding">
-      <div class="spacer--top"></div>
-      <div class="tile__ribbon">
-        <img class="tile__icon" alt="Mold icon" src="images/mold-icon.svg">
-        <a href="/services/molding/" class="tile__title">Injection Molding &amp;
-          <br> Mold-Making</a>
-        <ul class="tile__details">
-          <li>1 55-Ton Arburg with robotic automation</li>
-          <li>1 55-Ton Arburg molding machine</li>
-          <li>1 77-Ton Arburg molding machine</li>
-          <li>1 110-Ton Toshiba molding machine</li>
-          <li>Fully equipped shop for custom tooling</li>
-        </ul>
-      </div>
-      <div class="spacer--bottom"></div>
+    <div class="spacer--top"></div>
+    <div class="tile__ribbon">
+      <img class="tile__icon" alt="Mold icon" src="images/mold-icon.svg">
+      <a href="/services/molding/" class="tile__title">Injection Molding &amp;
+        <br> Mold-Making</a>
+      <ul class="tile__details">
+        <li>1 55-Ton Arburg with robotic automation</li>
+        <li>1 55-Ton Arburg molding machine</li>
+        <li>1 77-Ton Arburg molding machine</li>
+        <li>1 110-Ton Toshiba molding machine</li>
+        <li>Fully equipped shop for custom tooling</li>
+      </ul>
+    </div>
+    <div class="spacer--bottom"></div>
   </div>
   <div class="tile tile__machining">
     <div class="spacer--top"></div>
@@ -69,15 +71,47 @@ layout: default
 </section>
 
 <section class="find-us">
-  <iframe id="map" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDyJaSdQhmXwIc0dZXqiVDKtWlcCOT2euw&q=Protoquick,Leandro&zoom=12">
+  <iframe id="map" frameborder="0"
+    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDyJaSdQhmXwIc0dZXqiVDKtWlcCOT2euw&q=Protoquick,Leandro&zoom=12">
   </iframe>
   <div class="iso">
     <img class="iso__logo--tiny" alt="ISO9001:2015 Certified" src="images/iso-seal.jpg">
     <p class="iso__announcement">ISO 9001:2015 Certified</p>
   </div>
   <a class="button--giant" href="/contact/">Get Started Now</a>
+  <p>We're hiring!  <a href="/careers/" class="tiny-button-link">Apply now!</a></p>
   <address>
     1775 Timothy Drive, San Leandro, CA 94577
     <br> Bay Area Machine Shop, Injection Molding, and Engineering
   </address>
 </section>
+
+<script type="application/ld+json">
+{
+  "@context": "hhtp://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://proto-quick.com",
+  "image": "https://proto-quick.com/android-chrome-192x192.png",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1775 Timothy Drive",
+    "addressLocality": "San Leandro",
+    "addressRegion": "CA",
+    "postalCode": "94577",
+    "addressCountry": "US"
+  },
+  "name": "ProtoQuick, Inc.",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "37.713502",
+    "longitude": "-122.1755218"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "opens": "07:00:00",
+    "closes": "17:00:00"
+  },
+  "telephone": "1-510-264-0101",
+  "url": "https://proto-quick.com"
+}
+</script>

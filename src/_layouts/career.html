@@ -1,0 +1,48 @@
+---
+layout: prose
+---
+
+<main>
+    <h1>Careers</h1>
+    <p><a href="/careers/">< Back to the careers page</a></p>
+    <h2>{{ page.job_title }}</h2>
+    <p><small>Posted {{ page.date_posted }}</small></p>
+
+    <h3>Description</h3>
+    <p>{{ page.description }}</p>
+
+    <p>{{ content }}</p>
+
+    <p>Along with your application, please attach a resume.</p>
+    
+    <a class="apply-button" href="mailto:hiring@proto-quick.com?subject=Application for {{ page.title }}">Apply</a>
+</main>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "name": "{{ page.job_title }}",
+    "hiringOrganization": {
+        "@type": "Organization",
+        "name": "ProtoQuick, Inc.",
+        "sameAs": "https://proto-quick.com",
+        "logo": "android-chrome-192x192.png"
+    },
+    "datePosted": "{{ page.date_posted | date: '%Y-%m-%d' }}",
+    "description": "{{ content }}",
+    "jobLocation": {
+        "@type": "Place",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "1775 Timothy Drive",
+            "addressLocality": "San Leandro",
+            "addressRegion": "CA",
+            "postalCode": "94577",
+            "addressCountry": "US"
+        }
+    },
+    "title": "{{ page.job_title }}",
+    "employmentType": "FULL_TIME"
+}
+</script>

@@ -6,16 +6,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{% include long_description.txt %}{% endif %}" />
+  <meta name="description"
+    content="{% if page.description %}{{ page.description }}{% else %}{% include long_description.txt %}{% endif %}" />
   <!-- Schema.org markup for Google+ -->
   <meta itemprop="name" content="ProtoQuick, Inc.">
-  <meta itemprop="description" content="{% if page.description %}{{ page.description }}{% else %}{% include short_description.txt %}{% endif %}">
+  <meta itemprop="description"
+    content="{% if page.description %}{{ page.description }}{% else %}{% include short_description.txt %}{% endif %}">
   <meta itemprop="image" content="https://proto-quick.com/images/card-image.png">
 
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="ProtoQuick, Inc. | Home">
-  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{% include short_description.txt %}{% endif %}">
+  <meta name="twitter:description"
+    content="{% if page.description %}{{ page.description }}{% else %}{% include short_description.txt %}{% endif %}">
   <meta name="twitter:creator" content="@paytastic">
   <!-- Twitter summary card with large image must be at least 280x150px -->
   <meta name="twitter:image:src" content="https://proto-quick.com/images/card-image.png">
@@ -25,7 +28,8 @@
   <meta property="og:type" content="article" />
   <meta property="og:url" content="http://proto-quick.com" />
   <meta property="og:image" content="https://proto-quick.com/images/card-image.png" />
-  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{% include short_description.txt %}{% endif %}" />
+  <meta property="og:description"
+    content="{% if page.description %}{{ page.description }}{% else %}{% include short_description.txt %}{% endif %}" />
   <meta property="og:site_name" content="ProtoQuick" />
 
   <!-- Favicons -->
@@ -37,8 +41,8 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#b91d47">
   <meta name="theme-color" content="#ffffff">
-  
-  <link rel="stylesheet" href="/css/styles.css">
+
+  <link rel="stylesheet" href="/css/{{ layout.stylesheet }}">
 
   <!-- Uploadcare links -->
   <script>
@@ -57,10 +61,16 @@
         <a href="/">
           <img src="/images/logo.png" alt="ProtoQuick Logo" class="logo">
         </a><br>
-        <a class="link--plain" href="mailto:info@proto-quick.com">info@proto-quick.com</a> | 
+        <a class="link--plain" href="mailto:info@proto-quick.com">info@proto-quick.com</a> |
         <a class="link--plain" href="tel:+15102640101">510.264.0101</a>
       </div>
-      <a class="header__link" href="/about/">About</a>
+      <div class="dropdown">
+        <button class="dropdown__button">Company</button>
+        <div class="dropdown__content">
+          <a class="dropdown__link" href="/about/">About Us</a>
+          <a class="dropdown__link" href="/careers/">We're Hiring</a>
+        </div>
+      </div>
       <a class="header__link" href="/quality/">Quality</a>
       <div class="dropdown">
         <button class="dropdown__button">Services</button>

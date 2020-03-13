@@ -1,0 +1,24 @@
+---
+layout: prose
+title: Careers | ProtoQuick
+narrow: true
+description: We're hiring!  Check out these positions and join our team.
+---
+
+<main>
+    <h1>Careers</h1>
+    <p>At ProtoQuick, we have a small but skilled and diverse team.  We pride ourselves on precision, quality work, and our ability to solve complex problems together.  We're growing steadily, and we are always on the lookout for more talented people.</p>
+
+    <p>Below is a list of positions that we are currently searching for.  If you don't see something that fits exactly what you are looking for, but are still interested in joining our crew, please don't hesitate to send a resume to <a href="mailto:hiring@proto-quick.com">hiring@proto-quick.com</a>.</p>
+
+    <h2>Open Positions</h2>
+    
+    {% for job in site.careers %}
+    <div class="listing">
+        <a href="{{ job.url }}"><h2>{{ job.job_title }}</h2></a>
+
+        <p>{{ job.description }}</p>
+        <a href="{{ job.url }}" class="apply-button">Apply Now</a>
+    </div>
+    {% endfor %}
+</main>
